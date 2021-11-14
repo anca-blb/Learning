@@ -1,2 +1,2 @@
-# learning
-tutorials for learning html and css
+# Learning
+Tutorials for learning html and css
