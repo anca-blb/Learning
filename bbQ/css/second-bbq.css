@@ -1,0 +1,201 @@
+/* font-family: 'Source Sans Pro', sans-serif; */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    color: #404040;
+}
+
+
+/* ==============
+ Typography
+================= */
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 400;
+    color: white;
+    margin: 2em 0;
+    margin: 0;
+}
+
+h1 + p {
+    color: #F18119;
+    font-size: 1.313rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.3125rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h2 + p {
+    color: #F18119;
+    font-weight: 900;
+    margin-top: 0;
+}
+
+.top-text {
+    
+    font-size: .625rem;
+    color: #F18119;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    order:-1;
+    margin-top: 0;
+    border-top: 5px solid #F18119;
+    margin: 0 auto;
+    border-image: linear-gradient(to right, #FFA51D, #FF713B) 1;
+}
+
+.fine-print {
+    font-size: .625rem;
+}
+
+/* ==============
+ Layout
+================= */
+
+.intro {
+    background-image: url(../images/dark-ribs.jpg);
+    background-color: #404040;
+    background-position: center;
+    background-size: cover;
+    padding: 0 .5em 2em;
+    
+
+}
+
+.main-content {
+    padding: 2em 1em;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
+}
+
+/* ==============
+ form
+================= */
+
+.email-collector {
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto;
+    
+}
+
+input,
+.btn {
+    width: 100%;
+    border-radius: 5px;
+    border: solid 1px #404040;
+    
+    
+
+}
+
+input {
+    font-family: inherit;
+    text-align: inherit;
+    margin-bottom: .75em;
+    padding: .25em;
+    transform: scale(1);
+    transition: transform 250ms;
+
+}
+
+input:focus {
+    transform: scale(1.1);
+    
+}
+
+.btn {
+    display: inline-block;
+    font-size: 0.625rem;
+    letter-spacing: 1px;
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: .7em 1.5em;
+    border: 0;
+    
+}
+
+.btn-primary {
+    color: white;
+    background-image: linear-gradient(to right, #FFA51D, #FF713B);
+    transform: scale(1);
+    transition: transform 250ms;
+    
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    transform: scale(1.1);
+}
+
+/* .intro > *,
+.main-content > * {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+/* ==============
+ media queries
+================= */
+
+@media (min-width: 500px) {
+    body {
+        font-size: 1.125rem;
+        display: flex;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2,
+    h1 + p {
+        font-size: 1.75rem;
+    }
+
+    .intro,
+    .main-content {
+        width: 50%;
+        min-height: 100vh;
+    
+        
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .container-flex {
+        height: 100%;
+    }
+}
