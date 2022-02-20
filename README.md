@@ -1,2 +1,2 @@
 # Learning
-Tutorials for learning html and css
+Learning and expanding my knowledge in HTML, CSS and JavaScript
