@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="card">
+
+        <form class="form-container">
+
+            <input id="color-picker" type="color" value="#000000">
+
+            <select id="select-box">
+                <option>Monochrome</option>
+                <option>Monochrome-dark</option>
+                <option>Monochrome-light</option>
+                <option>Analogic</option>
+                <option>Complement</option>
+                <option>Analogic-complement</option>
+                <option>Triad</option>
+            </select>
+
+            <button id="submit">Get Color Scheme</button>
+
+        </form>
+
+        <section id="color-container" class="color-container">
+            <div id="color-display">
+                <div class="color color-one"></div>
+                <div class="color color-two"></div>
+                <div class="color color-three"></div>
+                <div class="color color-four"></div>
+                <div class="color color-five"></div>
+            </div>
+
+            <div id="color-value-display">
+                <div class="value value-one"></div>
+                <div class="value value-two"></div>
+                <div class="value value-three"></div>
+                <div class="value value-four"></div>
+                <div class="value value-five"></div>
+            </div>
+
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
