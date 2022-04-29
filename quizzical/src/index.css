@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-family:'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    display: flex;
+    background: lightgray;
+    color: #293264;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  height: 100vh;
+  background-color: #F5F7FB;
+}
+
+/* strat page */
+.start-page {
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  background: #F5F7FB;
+  height: 100vh;
+
+}
+
+.btn {
+  background: #4D5B9E;
+  padding: 1em 2.3em;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+/* quizz page */
+.quizz-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-check {
+  align-self: center;
+  margin-top: 2em;
+}
+
+.quizz-container {
+  max-width: 600px;
+  background: #F5F7FB;
+  padding: .7em;
+  display: grid;
+  grid-template: repeat(2, auto) / repeat(4, 1fr);
+  grid-gap: 1em;
+}
+
+.question {
+  grid-row: 1;
+  grid-column: 1 / -1;
+  margin: 0;
+  border-top: 1px solid lightgrey;
+  padding-top: 1.5em; 
+  font-size: 1em;
+}
+
+.answers {
+  border: 1px solid black;
+  padding: .5em;
+  border-radius: 1em;
+  margin: 0;
+  font-size: .8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
